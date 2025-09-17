@@ -26,12 +26,19 @@
     <main>
       <section class="calculator">
         <div class="calculator-container">
-          <div id="display">2+59*23</div>
+          <div id="display"></div>
           <div class="calculator-btns">
             <div class="button-row">
-              <button class="input-button" onclick="cleanDisplay()">C</button>
-              <button class="input-button" onclick="removeValue()">◀</button>
-              <button class="input-button orange" onclick="appendOperator('÷')">
+              <button class="input-button extra" onclick="cleanDisplay()">
+                C
+              </button>
+              <button class="input-button extra" onclick="removeValue()">
+                ◀
+              </button>
+              <button
+                class="input-button operator"
+                onclick="appendOperator('÷')"
+              >
                 ÷
               </button>
               <button

@@ -32,7 +32,7 @@
               <button class="input-button extra" onclick="cleanDisplay()">
                 C
               </button>
-              <button class="input-button extra" onclick="removeValue()">
+              <button class="input-button extra" onclick="removeLastValue()">
                 ◀
               </button>
               <button
@@ -97,8 +97,15 @@
               </button>
             </div>
             <div class="button-row">
-              <button class="input-button zero-input">0</button>
-              <button class="input-button">,</button>
+              <button
+                class="input-button zero-input"
+                onclick="appendNumber('0')"
+              >
+                0
+              </button>
+              <button class="input-button" onclick="appendNumber(',')">
+                ,
+              </button>
             </div>
           </div>
         </div>

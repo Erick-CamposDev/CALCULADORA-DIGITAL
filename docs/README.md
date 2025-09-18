@@ -28,6 +28,7 @@ O projeto foi desenvolvido para **praticar lógica de programação** e manipula
 ![Demonstração](/src/assets/imgs/calculator.jpg)
 
 [🔗 Acesse o projeto online](https://erick-camposdev.github.io/CALCULADORA-DIGITAL/)
+
 **⚠ AVISO**: Caso o estilo não carregue, aperte CTRL e F5 para reload da página!
 
 ---

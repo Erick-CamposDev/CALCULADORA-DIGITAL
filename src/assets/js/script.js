@@ -52,13 +52,17 @@ function removeLastValue() {
 
 function calculateResult() {
   try {
-    let expression = currentValue.replace(",", ".");
+    let expression = currentValue
+      .replace(",", ".")
+      .replace(/\x/g, "*")
+      .replace(/\÷/g, "/");
 
     const result = eval(expression);
     currentValue = String(result);
     display.innerText = currentValue.replace(/\./g, ",");
-  } catch {
+  } catch (error) {
     alert("ERRO!!!");
+    currentValue = "";
     display.innerText = "ERRO!!!";
   }
 }

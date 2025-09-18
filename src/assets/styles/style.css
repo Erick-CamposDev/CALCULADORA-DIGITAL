@@ -86,11 +86,19 @@ header {
   margin-right: 1.8rem;
 }
 
-@media (min-width: 280px) and (max-width: 420px) {
+@media (min-width: 280px) and (max-width: 360px) {
   .calculator-container {
     width: 95%;
   }
+}
 
+@media (min-width: 360px) and (max-width: 420px) {
+  .calculator-container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
   .input-button {
     width: 55px;
     height: 55px;
